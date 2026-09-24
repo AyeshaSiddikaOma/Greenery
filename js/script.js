@@ -1,6 +1,7 @@
 fetch("https://jsonplaceholder.typicode.com/users")
 .then( (user)=>{
-setTimeout(()=>{
-   console.log(user)
-},100)
-}  )
+return user.json()
+
+}  ).then(  (data)=>{
+    console.log(data)
+} )

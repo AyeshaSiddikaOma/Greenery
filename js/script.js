@@ -1,4 +1,6 @@
-fetch({name:"chai",password:1234,})
+fetch("https://jsonplaceholder.typicode.com/users")
 .then( (user)=>{
-
+setTimeout(()=>{
+   console.log(user)
+},100)
 }  )
